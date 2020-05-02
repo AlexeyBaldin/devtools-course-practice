@@ -2,6 +2,7 @@
 
 #include <string>
 #include <sstream>
+#include <stdexcept>
 
 #include "include/vector3D.h"
 #include "include/vector3D_calculator.h"

@@ -6,11 +6,11 @@
 #include <string>
 
 class Vector3DApplication {
-public:
+ public:
     Vector3DApplication();
     std::string operator()(int argc, const char** argv);
 
-private:
+ private:
     void help(const std::string appname, const char* message = "");
     bool validateNumberOfArguments(int argc, const std::string appName);
 
