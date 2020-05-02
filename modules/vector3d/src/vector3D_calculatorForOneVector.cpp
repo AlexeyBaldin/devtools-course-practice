@@ -8,7 +8,8 @@
 #include "include/vector3D_calculator.h"
 #include "include/vector3D_calculatorForOneVector.h"
 
-bool Vector3DCalculatorForOneVector::validateArguments(const std::string * argv) {
+bool Vector3DCalculatorForOneVector::validateArguments(const
+    std::string * argv) {
     try {
         stod(argv[1]);
         stod(argv[2]);

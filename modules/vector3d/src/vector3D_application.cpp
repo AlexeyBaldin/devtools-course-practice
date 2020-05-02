@@ -7,7 +7,8 @@
 
 Vector3DApplication::Vector3DApplication() : message_("") {}
 
-void Vector3DApplication::help(const std::string appname, const char * message) {
+void Vector3DApplication::help(const std::string appname,
+                               const char * message) {
     message_ =
         std::string(message) +
         "This is a 3d vector calculator application.\n\n" +
@@ -31,8 +32,7 @@ bool Vector3DApplication::validateNumberOfArguments(int argc,
     if (argc == 1) {
         help(appName);
         return false;
-    }
-    else if (argc != 8 && argc != 5) {
+    } else if (argc != 8 && argc != 5) {
         help(appName, "Should be 4 or 7 arguments.\n\n");
         return false;
     }

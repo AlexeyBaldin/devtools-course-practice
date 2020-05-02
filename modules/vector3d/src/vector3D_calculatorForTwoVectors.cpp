@@ -9,7 +9,8 @@
 #include "include/vector3D_calculatorForTwoVectors.h"
 
 
-bool Vector3DCalculatorForTwoVectors::validateArguments(const std::string * argv) {
+bool Vector3DCalculatorForTwoVectors::validateArguments(
+    const std::string * argv) {
     try {
         stod(argv[1]);
         stod(argv[2]);
@@ -50,7 +51,8 @@ void Vector3DCalculatorForTwoVectors::parseArguments(const std::string* argv) {
     operation = tolower(argv[7][0]);
 }
 
-std::string Vector3DCalculatorForTwoVectors::calculate(const std::string* argv) {
+std::string Vector3DCalculatorForTwoVectors::calculate(
+    const std::string* argv) {
     if (!validateArguments(argv)) {
         return message_;
     }
