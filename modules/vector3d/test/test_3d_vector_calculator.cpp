@@ -6,7 +6,7 @@
 #include <vector>
 
 #include "include/vector3D.h"
-#include "include/vector3D_calculator.h"
+#include "include/vector3D_application.h"
 
 using ::testing::internal::RE;
 using std::vector;
